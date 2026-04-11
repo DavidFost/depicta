@@ -570,6 +570,26 @@
     </div>
   </div>
 
+  <!-- Netlify Forms detection — hidden, never shown to users -->
+  <div style="display:none">
+    <form name="contact-modal" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact-modal">
+      <input name="bot-field">
+      <input name="name">
+      <input name="business">
+      <input name="email">
+      <input name="phone">
+      <input type="radio" name="plan" value="Starter">
+      <input type="radio" name="plan" value="Growth">
+      <input type="radio" name="plan" value="Pro">
+      <input type="radio" name="plan" value="Undecided">
+      <input type="radio" name="contact_preference" value="Email">
+      <input type="radio" name="contact_preference" value="Call">
+      <input type="radio" name="contact_preference" value="Text">
+      <textarea name="message"></textarea>
+    </form>
+  </div>
+
   <script src="js/main.js"></script>
 
 </body>
