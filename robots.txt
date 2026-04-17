@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /pcafi2025
 
 Sitemap: https://depictawebservices.com/sitemap.xml

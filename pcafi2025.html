@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>A Special Offer for PCAFI 2025 — Depicta Web Services</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── Page reset ── */
+    body {
+      background: var(--warm-white);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* ── Wrapper ── */
+    .lp {
+      width: 100%;
+      max-width: 480px;
+      padding: 2.5rem 1.25rem 4rem;
+      box-sizing: border-box;
+    }
+
+    /* ── Logo ── */
+    .lp__logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2.25rem;
+    }
+
+    .lp__logo img {
+      height: 52px;
+      width: auto;
+    }
+
+    /* ── Headline ── */
+    .lp__headline {
+      font-family: 'Lora', Georgia, serif;
+      font-size: clamp(1.6rem, 6vw, 2rem);
+      font-weight: 600;
+      color: var(--brown);
+      text-align: center;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+
+    .lp__intro {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 1rem;
+      color: var(--brown-mid);
+      text-align: center;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    /* ── Offer block ── */
+    .lp__offer {
+      background: var(--brown);
+      border-radius: 10px;
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lp__offer::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+      background-size: 18px 18px;
+      pointer-events: none;
+    }
+
+    .lp__offer-badge {
+      display: inline-block;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--brown);
+      background: var(--gold);
+      padding: 0.25rem 0.65rem;
+      border-radius: 3px;
+      margin-bottom: 0.9rem;
+    }
+
+    .lp__offer-title {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+    }
+
+    .lp__offer-title em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .lp__offer-desc {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.9375rem;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.65;
+      margin-bottom: 0;
+    }
+
+    /* ── Reassurance ── */
+    .lp__reassurance {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .lp__reassure-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.9375rem;
+      color: var(--brown-mid);
+      line-height: 1.5;
+    }
+
+    .lp__reassure-item svg {
+      flex-shrink: 0;
+      margin-top: 2px;
+      color: var(--gold);
+    }
+
+    /* ── Form ── */
+    .lp__form-label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--brown-light);
+      text-align: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .lp__form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .lp__field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .lp__field label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--brown);
+    }
+
+    .lp__field label .opt {
+      font-weight: 400;
+      color: var(--brown-light);
+      margin-left: 0.2em;
+    }
+
+    .lp__field input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.75rem 0.9rem;
+      border: 1.5px solid #d9c9b4;
+      border-radius: 6px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 1rem;
+      color: var(--brown);
+      background: #fff;
+      transition: border-color 0.18s ease, box-shadow 0.18s ease;
+      -webkit-appearance: none;
+    }
+
+    .lp__field input:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(191, 149, 63, 0.15);
+    }
+
+    .lp__field input::placeholder {
+      color: #b8a898;
+    }
+
+    .lp__submit {
+      width: 100%;
+      padding: 1rem;
+      background: var(--gold);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.18s ease, transform 0.12s ease;
+      margin-top: 0.4rem;
+      letter-spacing: 0.01em;
+    }
+
+    .lp__submit:hover {
+      background: var(--gold-dark);
+    }
+
+    .lp__submit:active {
+      transform: scale(0.98);
+    }
+
+    .lp__submit:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* ── Fine print ── */
+    .lp__fine {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.8125rem;
+      color: var(--brown-light);
+      text-align: center;
+      line-height: 1.55;
+      margin-top: 0.75rem;
+    }
+
+    /* ── Divider ── */
+    .lp__sep {
+      width: 48px;
+      height: 2px;
+      background: var(--gold);
+      border: none;
+      margin: 2rem auto;
+      opacity: 0.45;
+    }
+
+    /* ── Success state ── */
+    .lp__success {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .lp__success svg {
+      width: 64px;
+      height: 64px;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+    }
+
+    .lp__success h2 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--brown);
+      margin-bottom: 0.6rem;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: successFadeUp 0.4s ease 0.7s forwards;
+    }
+
+    .lp__success p {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.9375rem;
+      color: var(--brown-mid);
+      line-height: 1.65;
+      max-width: 32ch;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: successFadeUp 0.4s ease 0.85s forwards;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .lp__success h2,
+      .lp__success p {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .lp__success[hidden] {
+      display: none;
+    }
+
+    /* ── Footer note ── */
+    .lp__footer {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.8125rem;
+      color: var(--brown-light);
+      text-align: center;
+      margin-top: 3rem;
+      padding-bottom: 2rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lp">
+
+    <!-- Logo -->
+    <div class="lp__logo">
+      <img src="assets/logo.png" alt="Depicta Web Services" width="160" height="52">
+    </div>
+
+    <!-- Headline -->
+    <h1 class="lp__headline">A website that works as hard&nbsp;as you do.</h1>
+    <p class="lp__intro">It was great connecting at PCAFI 2025. We're grateful to serve the faith community!</p>
+
+    <!-- Offer block -->
+    <div class="lp__offer">
+      <span class="lp__offer-badge">Convention Exclusive</span>
+      <p class="lp__offer-title">Your first month, <em>on&nbsp;us.</em></p>
+      <p class="lp__offer-desc">When you start a new website plan with Depicta, we'll waive your first monthly payment entirely — no strings attached. Share your details below and we'll reach out to get things started at your pace.</p>
+    </div>
+
+    <hr class="lp__sep">
+
+    <!-- Form section -->
+    <div id="formSection">
+      <p class="lp__form-label">Claim your free month</p>
+
+      <form
+        id="pcafiForm"
+        class="lp__form"
+        name="pcafi2025"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        novalidate
+      >
+        <input type="hidden" name="form-name" value="pcafi2025">
+        <input type="hidden" name="bot-field" style="display:none">
+
+        <div class="lp__field">
+          <label for="pcafi-name">Full Name <span aria-hidden="true">*</span></label>
+          <input
+            type="text"
+            id="pcafi-name"
+            name="name"
+            placeholder="Your full name"
+            required
+            autocomplete="name"
+          >
+        </div>
+
+        <div class="lp__field">
+          <label for="pcafi-org">Organization <span class="opt">(optional)</span></label>
+          <input
+            type="text"
+            id="pcafi-org"
+            name="organization"
+            placeholder="Church, ministry, or business name"
+            autocomplete="organization"
+          >
+        </div>
+
+        <div class="lp__field">
+          <label for="pcafi-phone">Phone Number <span aria-hidden="true">*</span></label>
+          <input
+            type="tel"
+            id="pcafi-phone"
+            name="phone"
+            placeholder="(555) 000-0000"
+            required
+            autocomplete="tel"
+            inputmode="tel"
+          >
+        </div>
+
+        <button type="submit" class="lp__submit" id="pcafiSubmit">Claim My Free Month</button>
+      </form>
+
+      <p class="lp__fine">By submitting, you agree to be contacted by Depicta Web Services about this offer. We respect your time and will never spam you.</p>
+    </div>
+
+    <!-- Reassurance -->
+    <ul class="lp__reassurance" aria-label="What to expect">
+      <li class="lp__reassure-item">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <circle cx="8" cy="8" r="7.25" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M4.5 8l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        No pressure or sales tactics — just a friendly conversation about what your organization needs.
+      </li>
+      <li class="lp__reassure-item">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <circle cx="8" cy="8" r="7.25" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M4.5 8l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Flat monthly rate — no setup fees, no lock-in contracts, no surprises.
+      </li>
+      <li class="lp__reassure-item">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <circle cx="8" cy="8" r="7.25" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M4.5 8l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Most sites launch in 2–3 weeks. You're always in the loop.
+      </li>
+    </ul>
+
+    <!-- Success state (hidden until submission) -->
+    <div id="pcafiSuccess" class="lp__success" hidden>
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle class="success-circle" cx="32" cy="32" r="22" stroke="currentColor" stroke-width="2.5" fill="none"/>
+        <path class="success-check" d="M21 32l8 8 14-14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h2>You're on the list!</h2>
+      <p>We'll be in touch soon to get your site underway. Thank you for trusting us with your ministry.</p>
+    </div>
+
+    <!-- Footer -->
+    <p class="lp__footer">Depicta Web Services &nbsp;·&nbsp; depictawebservices.com</p>
+
+  </div>
+
+  <!-- Netlify Forms detection (outside form section for crawler) -->
+  <div style="display:none">
+    <form name="pcafi2025" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="pcafi2025">
+      <input name="bot-field">
+      <input name="name">
+      <input name="organization">
+      <input name="phone">
+    </form>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      var form = document.getElementById('pcafiForm');
+      var formSection = document.getElementById('formSection');
+      var successSection = document.getElementById('pcafiSuccess');
+      var submitBtn = document.getElementById('pcafiSubmit');
+      var phoneInput = document.getElementById('pcafi-phone');
+
+      // Strip non-numeric for validation, allow + at start
+      phoneInput.addEventListener('input', function () {
+        var val = phoneInput.value.replace(/[^\d\s().+\-]/g, '');
+        phoneInput.value = val;
+      });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Basic phone validation: at least 7 digits
+        var digits = phoneInput.value.replace(/\D/g, '');
+        if (digits.length < 7) {
+          phoneInput.setCustomValidity('Please enter a valid phone number.');
+          phoneInput.reportValidity();
+          return;
+        }
+        phoneInput.setCustomValidity('');
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
+
+        var data = new FormData(form);
+        fetch('/', { method: 'POST', body: data })
+          .then(function () {
+            formSection.hidden = true;
+            successSection.hidden = false;
+            successSection.querySelector('h2').focus();
+          })
+          .catch(function () {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Claim My Free Month';
+            alert('Something went wrong. Please email us at info@depictawebservices.com');
+          });
+      });
+    })();
+  </script>
+
+</body>
+</html>
