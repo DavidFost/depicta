@@ -687,6 +687,26 @@ em {
   border-color: var(--gold-light);
 }
 
+.plan-col__see-all {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  color: var(--gold-light);
+  text-decoration: none;
+  margin-bottom: 1.25rem;
+  transition: color var(--transition);
+}
+
+.plan-col__see-all:hover {
+  color: var(--gold);
+}
+
+.plan-col__add-on {
+  font-style: italic;
+  color: var(--brown-muted);
+  font-size: 0.875rem;
+}
+
 .plans-cta {
   margin-top: 2rem;
   text-align: center;
@@ -793,6 +813,8 @@ em {
 .cta-section__reply svg {
   display: inline-block;
   vertical-align: middle;
+  width: 13px;
+  height: 13px;
   margin-right: 5px;
   margin-top: -2px;
 }
@@ -1709,13 +1731,110 @@ body.modal-open {
 }
 
 /* ============================================================
+   PORTFOLIO
+============================================================ */
+.portfolio-section {
+  border-top: 1px solid var(--rule);
+}
+
+.portfolio-section__heading {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brown-muted);
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.portfolio-card {
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+  transition: box-shadow var(--transition);
+}
+
+.portfolio-card:hover {
+  box-shadow: 0 4px 18px rgba(30, 26, 20, 0.08);
+}
+
+.portfolio-card__img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--beige);
+  overflow: hidden;
+}
+
+.portfolio-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.portfolio-card__body {
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+.portfolio-card__name {
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--brown);
+  margin-bottom: 0.2rem;
+}
+
+.portfolio-card__meta {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  color: var(--brown-muted);
+  margin-bottom: 0.65rem;
+}
+
+.portfolio-card__link {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--gold-light);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.portfolio-card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.portfolio-card__link:hover {
+  color: var(--gold);
+}
+
+@media (max-width: 700px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* ============================================================
    PERSONAL NOTE
 ============================================================ */
 .personal-note {
   padding-block: 4rem;
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
-  background-color: var(--cream);
+  background-color: var(--brown);
+  background-image: radial-gradient(circle, rgba(196, 180, 122, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
 .personal-note__mark {
@@ -1730,7 +1849,7 @@ body.modal-open {
   font-style: italic;
   font-size: clamp(1.05rem, 2vw, 1.2rem);
   line-height: 1.75;
-  color: var(--brown-mid);
+  color: rgba(255, 255, 255, 0.82);
   border-left: 3px solid var(--gold);
   padding-left: 1.75rem;
   margin: 0 0 1.5rem;
@@ -1740,13 +1859,13 @@ body.modal-open {
 .personal-note__link {
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--gold);
+  color: var(--gold-dim);
   letter-spacing: 0.01em;
   transition: color var(--transition);
 }
 
 .personal-note__link:hover {
-  color: var(--brown);
+  color: #fff;
 }
 
 /* ============================================================
