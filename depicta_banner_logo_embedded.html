@@ -1,0 +1,126 @@
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+.bo{display:flex;flex-direction:column;align-items:center;padding:2rem 0;gap:1rem;}
+.bl{font-family:'Source Sans 3',sans-serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#6b6050;}
+.bw{width:228px;background:#f7f0e4;border-radius:4px;overflow:hidden;border:1px solid #b8b0a6;font-family:'Source Sans 3',sans-serif;}
+
+/* ── Light sections ── */
+.b-head{background:#f7f0e4;padding:18px 20px 14px;border-bottom:3px solid #7a6a3a;text-align:center;}
+.b-head img{height:46px;width:auto;display:block;margin:0 auto;}
+
+.b-hero{background:#f7f0e4;padding:22px 22px 18px;text-align:center;border-bottom:1px solid #b8b0a6;}
+.b-rule{width:28px;height:2px;background:#7a6a3a;margin:0 auto 12px;}
+.b-hero-h{font-family:'Lora',serif;font-size:20px;font-weight:600;color:#1e1a14;line-height:1.2;margin-bottom:10px;}
+.b-hero-h em{font-style:italic;color:#7a6a3a;}
+.b-hero-p{font-size:8.5px;font-weight:400;color:#6b6050;line-height:1.7;max-width:168px;margin:0 auto;}
+
+/* ── Dark promo strip ── */
+.b-promo{background:#1e1a14;background-image:radial-gradient(circle,rgba(196,180,122,.12) 1px,transparent 1px);background-size:16px 16px;padding:16px 22px;text-align:center;}
+.b-promo-eye{font-size:7px;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:#9a8950;margin-bottom:6px;}
+.b-promo-big{font-family:'Lora',serif;font-size:19px;font-weight:600;color:#f7f0e4;line-height:1.1;}
+.b-promo-big em{font-style:italic;color:#c4b47a;}
+.b-promo-sub{font-size:8px;font-weight:400;color:rgba(247,240,228,.6);margin-top:5px;}
+
+/* ── Services — beige ── */
+.b-svcs{background:#d8d0c6;padding:15px 22px;border-bottom:1px solid #b8b0a6;}
+.b-svcs-lbl{font-size:7px;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:#7a6a3a;margin-bottom:10px;text-align:center;}
+.b-svc{display:flex;align-items:center;gap:8px;font-size:8.5px;font-weight:400;color:#3d3525;padding:3.5px 0;border-bottom:1px solid rgba(30,26,20,.12);}
+.b-svc:last-child{border-bottom:none;}
+.b-svc-ln{width:10px;height:1px;background:#7a6a3a;flex-shrink:0;}
+
+/* ── Plans — cream ── */
+.b-plans{background:#e4ddd4;padding:13px 22px;border-bottom:1px solid #b8b0a6;}
+.b-plans-lbl{font-size:7px;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:#7a6a3a;margin-bottom:10px;text-align:center;}
+.b-plans-row{display:flex;gap:6px;}
+.b-plan{flex:1;background:#f7f0e4;border:1px solid #b8b0a6;padding:8px 4px;text-align:center;border-radius:2px;}
+.b-plan-name{font-size:6.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#6b6050;margin-bottom:3px;}
+.b-plan-price{font-family:'Lora',serif;font-size:13px;font-weight:600;color:#1e1a14;line-height:1;}
+.b-plan-mo{font-size:6.5px;color:#6b6050;font-weight:300;}
+
+/* ── Bottom / QR ── */
+.b-bottom{background:#f7f0e4;padding:15px 22px;text-align:center;border-top:1px solid #b8b0a6;}
+.b-scan{font-size:7.5px;font-weight:500;color:rgba(247,240,228,.7);letter-spacing:.08em;margin:10px 0 6px;}
+.b-qr-wrap{margin:10px auto 0;display:inline-block;background:#f7f0e4;border:2px solid #c4b47a;border-radius:4px;padding:6px;}
+.b-qr{width:60px;height:60px;border-radius:2px;overflow:hidden;}
+.b-qr img,.b-qr canvas{width:60px!important;height:60px!important;display:block;}
+.b-rule2{width:36px;height:1px;background:#b8b0a6;margin:10px auto;}
+.b-contact{font-size:7.5px;font-weight:400;color:#6b6050;line-height:1.9;}
+.b-contact strong{color:#1e1a14;font-weight:600;display:block;}
+
+/* ── Dark footer ── */
+.b-foot{background:#1e1a14;background-image:radial-gradient(circle,rgba(196,180,122,.1) 1px,transparent 1px);background-size:16px 16px;padding:8px 22px;text-align:center;}
+.b-foot-txt{font-size:6.5px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:#6b6050;}
+
+.sn{font-family:'Source Sans 3',sans-serif;font-size:11px;color:#6b6050;text-align:center;max-width:280px;line-height:1.7;}
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .note {
+    display: none;
+  }
+}
+</style>
+<div class="bo">
+  <div class="bl">Pull-up banner · 33" × 80" · To scale</div>
+  <div class="bw">
+    <div class="b-head">
+      <img src="assets/logo.png" alt="Depicta Web Services" style="height:46px;width:auto;display:block;margin:0 auto;">
+    </div>
+    <div class="b-hero">
+      <div class="b-rule"></div>
+      <div class="b-hero-h">Your website,<br><em>handled.</em></div>
+      <div class="b-hero-p">Professional websites for small businesses and faith-based organizations — one flat monthly rate, no setup fees.</div>
+    </div>
+    <div class="b-promo">
+      <div class="b-promo-eye">Exclusive Offer</div>
+      <div class="b-promo-big">First Month <em>Free</em></div>
+      <div class="b-promo-sub">Sign up at the booth today</div>
+      <div class="b-scan">Scan to claim your free month</div>
+      <div class="b-qr-wrap"><div class="b-qr" id="bannerQR"></div></div>
+    </div>
+    <div class="b-svcs">
+      <div class="b-svcs-lbl">What's Included</div>
+      <div class="b-svc"><span class="b-svc-ln"></span>Professional website design & build</div>
+      <div class="b-svc"><span class="b-svc-ln"></span>Hosting, domain & SSL — all managed</div>
+      <div class="b-svc"><span class="b-svc-ln"></span>Business email setup & management</div>
+      <div class="b-svc"><span class="b-svc-ln"></span>Foundation SEO & Google Analytics</div>
+      <div class="b-svc"><span class="b-svc-ln"></span>Ongoing updates & dedicated support</div>
+      <div class="b-svc"><span class="b-svc-ln"></span>No setup fees. No surprises.</div>
+    </div>
+    <div class="b-plans">
+      <div class="b-plans-lbl">Plans Starting At</div>
+      <div class="b-plans-row">
+        <div class="b-plan"><div class="b-plan-name">Starter</div><div class="b-plan-price">$150</div><div class="b-plan-mo">/mo</div></div>
+        <div class="b-plan"><div class="b-plan-name">Growth</div><div class="b-plan-price">$250</div><div class="b-plan-mo">/mo</div></div>
+        <div class="b-plan"><div class="b-plan-name">Pro</div><div class="b-plan-price">$400</div><div class="b-plan-mo">/mo</div></div>
+      </div>
+    </div>
+    <div class="b-bottom">
+      <div class="b-contact">
+        <strong>depictawebservices.com</strong>
+        info@depictawebservices.com<br>
+        (601) 910-8102
+      </div>
+    </div>
+    <div class="b-foot">
+      <div class="b-foot-txt">Depicta Web Services · Davenport, FL</div>
+    </div>
+  </div>
+  <div class="sn">Order at Vistaprint · 33" × 80" retractable · Matte finish recommended</div>
+</div>
+<script>
+  new QRCode(document.getElementById('bannerQR'), {
+    text: 'https://depictawebservices.com/pcafi2026',
+    width: 60,
+    height: 60,
+    colorDark: '#1e1a14',
+    colorLight: '#f7f0e4',
+    correctLevel: QRCode.CorrectLevel.H
+  });
+</script>
